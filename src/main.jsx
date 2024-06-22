@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import OnlineOrder from './components/pages/onlineOrder.jsx'
+import Product from './components/pages/product.jsx'
+import Outlets from './components/pages/outlets.jsx'
+import Profil from './components/pages/profile.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -13,19 +16,19 @@ const router = createBrowserRouter([
     element: <App/>
   },{
     path: '/home',
-    element: "home"
+    element: <App/>
   },{
     path: "/product",
-    element: "prodcut"
+    element: <Product/>
   },{
     path: "/online-order",
     element: <OnlineOrder/>
   },{
     path: "/outlets",
-    element: "outlet"
+    element: <Outlets/>
   },{
     path: "/profile",
-    element: "profile"
+    element: <Profil/>
   }
 
 ])

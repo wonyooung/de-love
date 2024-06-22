@@ -3,7 +3,7 @@ export default function Product(){
     return(
         <div>
             <SideBar>
-                Product
+               product
             </SideBar>
         </div>
     )
